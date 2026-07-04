@@ -61,7 +61,7 @@ jobs:
       - name: Build contract for wasm32
         run: cargo build --target wasm32-unknown-unknown --release -p swiftramp-swap
       - name: Upload wasm artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: swiftramp-swap-wasm
           path: target/wasm32-unknown-unknown/release/*.wasm
